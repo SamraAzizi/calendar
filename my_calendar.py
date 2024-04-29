@@ -23,4 +23,5 @@ class CalendarApp:
         self.show_button = ttk.Button(root, text="Show Calendar", command=self.show_calendar)
         self.show_button.grid(row=0, column=4)
         
+        self.calendar_label = ttk.Label(root, text="Calendar", font=('Helvetica', 16))
  
