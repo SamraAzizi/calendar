@@ -37,4 +37,5 @@ class CalendarApp:
         self.next_button = ttk.Button(root, text="Next >>", command=self.show_next_month)
         self.next_button.grid(row=2, column=3)
 
-      
+        # Show current month calendar on start
+        self.show_calendar()
