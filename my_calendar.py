@@ -32,3 +32,9 @@ class CalendarApp:
         self.calendar_label.grid(row=1, column=0, columnspan=5, sticky="w")
         
         # Buttons to navigate between months
+        self.prev_button = ttk.Button(root, text="<< Previous", command=self.show_previous_month)
+        self.prev_button.grid(row=2, column=1)
+        self.next_button = ttk.Button(root, text="Next >>", command=self.show_next_month)
+        self.next_button.grid(row=2, column=3)
+
+      
