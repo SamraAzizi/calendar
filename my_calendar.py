@@ -25,4 +25,10 @@ class CalendarApp:
         self.month_entry.grid(row=0, column=3)
         self.month_entry.insert(0, str(self.current_month))
         
- 
+        self.show_button = ttk.Button(root, text="Show Calendar", command=self.show_calendar)
+        self.show_button.grid(row=0, column=4)
+        
+        self.calendar_label = ttk.Label(root, text="", font=('Helvetica', 16), justify=tk.LEFT)
+        self.calendar_label.grid(row=1, column=0, columnspan=5, sticky="w")
+        
+        # Buttons to navigate between months
