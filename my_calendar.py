@@ -40,4 +40,12 @@ class CalendarApp:
         # Show current month calendar on start
         self.show_calendar()
 
-   
+    def show_calendar(self):
+        try:
+            year = int(self.year_entry.get())
+            month = int(self.month_entry.get())
+            if 1 <= month <= 12:
+                cal = calendar.month(year, month)
+                self.calendar_label.config(text=cal)
+            else:
+                messagebox.showerror("Error", "Month must be between 1 and 12")
