@@ -39,3 +39,5 @@ class CalendarApp:
 
         # Show current month calendar on start
         self.show_calendar()
+
+   
