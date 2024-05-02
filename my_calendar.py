@@ -49,3 +49,7 @@ class CalendarApp:
                 self.calendar_label.config(text=cal)
             else:
                 messagebox.showerror("Error", "Month must be between 1 and 12")
+        except ValueError:
+            messagebox.showerror("Error", "Enter valid year and month")
+            
+    
