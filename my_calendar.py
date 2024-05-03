@@ -64,4 +64,19 @@ class CalendarApp:
         self.year_entry.insert(0, str(year))
         self.show_calendar()
 
-  
+    def show_next_month(self):
+        month = int(self.month_entry.get()) + 1
+        year = int(self.year_entry.get())
+        if month > 12:
+            month = 1
+            year += 1
+        self.month_entry.delete(0, tk.END)
+        self.month_entry.insert(0, str(month))
+        self.year_entry.delete(0, tk.END)
+        self.year_entry.insert(0, str(year))
+        self.show_calendar()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = CalendarApp(root)
+    root.mainloop()
