@@ -52,3 +52,16 @@ class CalendarApp:
         except ValueError:
             messagebox.showerror("Error", "Enter valid year and month")
             
+    def show_previous_month(self):
+        month = int(self.month_entry.get()) - 1
+        year = int(self.year_entry.get())
+        if month < 1:
+            month = 12
+            year -= 1
+        self.month_entry.delete(0, tk.END)
+        self.month_entry.insert(0, str(month))
+        self.year_entry.delete(0, tk.END)
+        self.year_entry.insert(0, str(year))
+        self.show_calendar()
+
+  
