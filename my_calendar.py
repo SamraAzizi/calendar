@@ -52,4 +52,3 @@ class CalendarApp:
         except ValueError:
             messagebox.showerror("Error", "Enter valid year and month")
             
-    
