@@ -15,13 +15,3 @@ This is a simple calendar application built using Python's `tkinter` library. It
 
 ## Usage:
 
-1. Clone or download the repository.
-2. Run the `calendar_app.py` file using Python.
-3. Enter the desired year and month.
-4. Click on the "Show Calendar" button to display the calendar for the specified year and month.
-5. Use the "Previous" and "Next" buttons to navigate between months.
-
-## How to Run:
-
-```bash
-python calendar_app.py
