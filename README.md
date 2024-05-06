@@ -25,3 +25,5 @@ This is a simple calendar application built using Python's `tkinter` library. It
 
 ```bash
 python calendar_app.py
+
+Enjoy
